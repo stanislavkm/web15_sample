@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header{
+    height: 40vh;
+    width: 100%;
+    background-color: #f5253d;
+    padding-top: 8px;
+}
+
+main{
+    height: 45vh;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+}
+h1{
+    margin-top: 10vh;
+    font-family: "Montserrat Medium";
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;
+    color: #f2f3f3;
+}
+h2{
+    margin-left: 2vw;
+    margin-bottom: 4vh;
+    font-family: "Montserrat Medium";
+    font-weight: bold;
+    font-size: 1.3vw;
+    color: #f2f3f3;
+    text-decoration: underline;
+}
+p{
+    padding-right: 0.5vw;
+    margin-left: 25px;
+    font-family: "Montserrat Medium";
+    line-height: 3.3vh;
+    font-size: 1.1vw;
+    color: #f2f3f3;
+}
+ul{
+    padding-right: 1vw;
+}
+ul li{
+    line-height: 3vh;
+    font-family: "Montserrat Medium";
+    font-size: 1vw;
+    color: #f2f3f3;
+}
+/*--------------------wrapper-1---------------------*/
+.wrapper-1{
+    display: flex;
+    height: 100%;
+}
+.block{
+    padding-top: 9vh;
+    width: 33.3333vw;
+}
+#col-1{
+    /*background-image: url(../img/col_1.jpg);*/
+    background-color: black;
+    overflow: hidden;
+    /*background-position: left center;*/
+}
+#col-2{
+    /*background-image: url(../img/col_2.jpg);*/
+    background-color: #1f1e1e;
+    background-size: cover;
+}
+#col-3{
+    /*background-image: url(../img/col_3.jpg);*/
+    background-color: #4b4b4b;
+    overflow: hidden;
+}
+
+/*--------------------fullBlock---------------------*/
+
+.fullBlock{
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.fullBlock__col{
+    padding-top: 9vh;
+    width: 33.3333vw;
+}
+div[data-id='col-1']{
+    /*background-image: url(../img/col_1.jpg);*/
+    background-color: black;
+    overflow: hidden;
+    left: 0;
+}
+div[data-id='col-2']{
+    /*background-image: url(../img/col_2.jpg);*/
+    background-color: #1f1e1e;
+    background-size: cover;
+    left: 0;
+}
+div[data-id='col-3']{
+    /*background-image: url(../img/col_3.jpg);*/
+    background-color: #4b4b4b;
+    background-size: cover;
+    overflow: hidden;
+    left: 0;
+}
+
+
+
+footer{
+    height: 15vh;
+    width: 100%;
+    background-color: #f5253d;
+}
+.btn{
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 5vh;
+    width: 10vw;
+}
+.show{
+    visibility: visible;
+    transition: all 0.2s ease-in;
+    opacity: 1;
+}
+.hide {
+    visibility: hidden;
+    /* 1) если в данном классе убрать visibility, то получается, что сверху лежит не block, а fullBlock?????*/
+    opacity: 0;
+    /*---2) если я убираю тут opacity:0, то переход без плавности, потому что нечему анимироваться???????---*/
+}
+div[data-id='col-2'].hide{
+    transform: translateX(33.3333vw);
+}
+div[data-id='col-3'].hide{
+    transform: translateX(66.6666vw);
+}
+
+
+
