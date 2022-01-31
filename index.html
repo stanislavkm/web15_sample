@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="header__nav">
+        <div class="header_nav">
             <a href="#" class="logo">Студия 15</a>
             <ul>
                 <li><a href="#" class="active">Проекты</a></li>
@@ -19,9 +19,21 @@
                 <li><a href="#">Контакты</a></li>
                 <li><a href="#">Блог</a></li>
             </ul>
-            <button>Начать проект</button>
+            <button class="header_nav_button">Начать проект</button>
         </div>
     </header>
+
+    <div class="hide_modal_window">
+        <div class="modal_project">
+                <form action="#">
+                    <h2>Данные по проекту</h2>
+                        <input class="form-control" type="text" required placeholder="ФИО" >
+                        <input class="form-control" type="text" required placeholder="Телефон" >
+                        <textarea class="form-control" type="text" placeholder="Дополнительная информация"></textarea>
+                        <button class="modal_button">Отправить данные</button>
+                </form>
+        </div>
+    </div>
 
     <main>
         <div class="wrapper-0">
@@ -110,7 +122,6 @@
                 </div>
             </div>
             </div>
-        </div>
     </main>
 
     <footer>
