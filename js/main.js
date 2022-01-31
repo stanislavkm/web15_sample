@@ -36,7 +36,7 @@ $(document).ready(function (){
         });
     });
 
-    $('header, footer').hover(function (){
+    $('header, footer, .wrapper-0').hover(function (){
         $('.fullBlock').addClass('hide');
     });
 
