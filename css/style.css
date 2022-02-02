@@ -5,26 +5,44 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #f5253d;
 }
-
+h1{
+    padding-top: 2vh;
+    margin: 0 2.4vw;
+    width: 60%;
+    font-weight: 400;
+    font-family: "Futura PT", sans-serif;;
+    font-size: 3.2vw;
+    color: #000000;
+}
+h2{
+    margin-left: 2vw;
+    margin-bottom: 4vh;
+    font-family: "Montserrat Medium";
+    font-weight: bold;
+    font-size: 1.3vw;
+    color: black;
+    text-decoration: underline;
+}
 
 /*--------------------header---------------------*/
 header{
     height: 10vh;
     width: 100%;
-    background-color: #f5253d;
 }
 .header_nav{
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15px 35px;
+    padding: 5px 35px 25px 35px;
     align-items: center;
 }
 .header_nav .logo{
     font-family: "Montserrat Medium";
     color: #fff;
     font-size: 2.6vw;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 }
 .header_nav ul{
@@ -34,7 +52,7 @@ header{
 }
 .header_nav ul li{
     font-size: 1.1vw;
-    margin-left: 15px;
+    margin-left: 1vw;
 }
 .header_nav ul li a{
     text-decoration: none;
@@ -49,7 +67,7 @@ header{
     color: #f5253d;
     font-size: 1.1vw;
     border-radius: 8px;
-    padding: 15px 25px;
+    padding: 1.6vh 1.4vw;
     font-family: "Montserrat Medium";
 }
 header ul li a:hover,
@@ -119,14 +137,8 @@ main{
     background-color: #ffffff;
 }
 
-main h2{
-    margin-left: 2vw;
-    margin-bottom: 4vh;
-    font-family: "Montserrat Medium";
-    font-weight: bold;
-    font-size: 1.3vw;
+.wrapper-1 h2{
     color: #f2f3f3;
-    text-decoration: underline;
 }
 p{
     padding-right: 0.5vw;
@@ -151,12 +163,6 @@ ul li{
     background-color: #f5253d;
 }
 .wrapper-0 h1{
-    padding-top: 2vh;
-    margin: 0 2.4vw;
-    width: 60%;
-    font-weight: 400;
-    font-family: "Futura PT", sans-serif;;
-    font-size: 3.2vw;
     color: #fff;
 }
 .wrapper-0 p{
@@ -225,26 +231,27 @@ footer{
     display: flex;
     height: 10vh;
     width: 100%;
-    background-color: #f5253d;
 }
 .contacts{
-    padding: 3.5vh 3vw;
+    padding: 3.5vh 5vw;
     width: 50%;
     font-family: "Montserrat Medium";
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 .contacts a{
     color:#fff;
+    text-decoration: none;
 }
 .mail{
-    padding: 3.5vh 3vw;
+    padding: 3.5vh 5vw;
     width: 50%;
     font-family: "Montserrat Medium";
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 .mail a{
     float: right;
     color:#fff;
+    text-decoration: none;
 }
 
 
@@ -264,6 +271,30 @@ div[data-id='col-3'].hide{
     transform: translateX(66.6666vw);
 }
 
-
-
-
+/*--------------------dependent pages header and footer---------------------*/
+.header_nav.dependent{
+    height: 100%;
+}
+.dependent{
+    background-color: #fff;
+}
+.dependent .logo{
+    color: #000;
+}
+.dependent ul li a{
+    color: #f5253d;  /*почему не рабоает с просто ul li, нужно именно ul li a*/
+}
+.dependent .header_nav_button{
+    color: #fff;
+    background-color: #f5253d;
+}
+hr{
+    background-color: rgb(255, 0, 0); /*ужасы с линией*/
+    transform: translateY(-25px);
+}
+.footer_dependent{
+    background-color: #fdf2f5;
+}
+.footer_dependent a{
+    color:#000;
+}

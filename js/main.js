@@ -21,16 +21,16 @@ $(document).ready(function (){
 
     $(document).keydown(function(e) {
         if (e.keyCode === 27) {
-            e.stopPropagation();
+            e.stopPropagation(); //ЗАЧЕМ ТУТ ЭТО?
             $('.hide_modal_window').fadeOut(1);
         }
     });
  //СКРЫТИЕ МОДАЛЬНОГО ОКНА ПО НАЖАТИЮ ВНЕ ЭТОГО ОКНА
-    // $('.hide_modal_window').click(function(e) {
-    //     if ($(e.target).closest('.modal_project').length == 0) {
-    //         $(this).fadeOut();
-    //     }
-    // });
+ //    $('.hide_modal_window').click(function(e) {
+ //        if ($(e.target).closest('.modal_project').length == 0) {
+ //            $(this).fadeOut();
+ //        }
+ //    });
 });
 
 
